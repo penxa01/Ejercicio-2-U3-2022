@@ -11,12 +11,15 @@ class ramo:
     def agregarFlor(self,Nuevaflor):
         if isinstance(Nuevaflor, flor):
             self.__Flores.append(Nuevaflor)
-            print("Flor agregada al ramo")
+            print("{} agregada al ramo".format(Nuevaflor.getNombre()))
         else:
             print("{} no es una flor".format(Nuevaflor))
 
     def getTamaño(self):
         return self.__tamaño
+    
+    def getLista(self):
+        return self.__Flores
     
     def mostrar(self):
         print("Tamaño:{}".format(self.__tamaño.capitalize()))

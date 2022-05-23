@@ -34,14 +34,15 @@ class menu:
                 self.__registroRamos.agregarRamo(self.__listadoFlores)
                 os.system("cls")
             elif(self.__op == 2):
-                print("Opcion sin terminar")
+                self.__listadoFlores.mostrarModaFlores()
                 input("ENTER PARA CONTINUAR")
                 os.system("cls")
             elif(self.__op == 3):
-                print("Opcion sin  terminar")
+                tamañoPorTeclado = input("Ingrese el tamaño por teclado que desea analizar\n")
+                self.__registroRamos.porTamaño(tamañoPorTeclado)
                 input("ENTER PARA CONTINUAR")
                 os.system("cls")
-            elif(self.__op == 4):
+            elif(self.__op == 0):
                 print("Muchas gracias")
                 continuar = not continuar
             else:

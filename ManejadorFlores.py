@@ -54,5 +54,13 @@ class flores:
         return i
 
     
+    def mostrarModaFlores(self):
+        self.__ListaFlores.sort()
+        print("Top 5 flores mas vendidas")
+        for i in range(5):
+            print("".center(20),"-")
+            print(self.__ListaFlores[i])
+            
+    
 
     
